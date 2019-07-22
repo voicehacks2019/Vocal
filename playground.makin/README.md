@@ -1,5 +1,5 @@
 <p align="Center">
-  <img src="https://makin.io/images/makin_logo_small.pn">
+  <img src="https://makin.io/images/makin_logo_small.png">
   <br/>
   <h1 align="Center">VoiceHacks 2019 Team Vocal Makin Capsule</h1>
 </p>
