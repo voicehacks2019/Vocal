@@ -1,49 +1,19 @@
 <p align="Center">
   <img src="https://makin.io/images/makin_logo_small.png">
   <br/>
-  <h1 align="Center">VoiceHacks 2019 Team Vocal Makin Capsule</h1>
+  <h1 align="Center">VoiceHacks 2019 Team Vocal: Makin Capsule</h1>
 </p>
 
 ## Overview
-
-Do you have a great idea for a quiz that will entertain and delight Bixby users? Do you want to create a fun quiz to help you learn something new? A quiz to stump your friends? The quiz sample capsule is the perfect place to start building a Bixby quiz capsule!
-
-Both the fundamentals of a Bixby Capsule and some more intermediate/advanced concepts are used. This is a great capsule to learn even more about how to develop for Bixby.
-
-You can easily customize this capsule with your own quiz without any development! Just use the spreadsheet in the `contentUtility` folder and cut and paste from there into the `quizzes.js` file, update the `capsule.id` and `training` as necessary and you have made this capsule your own!
+Makin is a small business assistant. In this capsule, Makin will help gather answers from the users and put them in a spreadsheet for you.
 
 ## How to get started
 
-* Download and install the Bixby Studio IDE from the [Bixby Developer Center](http://bixbydevelopers.com)
-* Download this capsule (zip is the easiest way) from Github. Unzip in your directory of choice
-* Open the Capsule in Bixby Studio
-* Open the simulator and give it a try!
-
-## How to try
-Ask Bixby to start a quiz, try these:
-```
-Start a quiz (Bixby asks you which quiz you want to start)
-
-Start a states quiz (Bixby starts a quiz about US States)
-
-Start a presidents quiz (Bixby starts a quiz about US presidents)
-
-Start a funny quiz (Bixby starts a quiz that is funny)
-
-```
-
-# How to customize
-* Change the capsule id to reflect your organization and your content. The capsule id is defined in `capsule.bxb` file. 
-* Create your own quiz questions and answers by editing the `code/data/quizzes.js` file. You may also use the spreadsheet located in `contentUtility/createQuizContent` The `quizzes.js` file has comments that explain each of the fields and how they customize a quiz
-* You can customize the Quiz NoResult dialog by modifying the `resources/en/dialogs/NoQuiz.dialog.bxb`
-* You can customize the Quiz Found dialog by modifying the `resources/base/views/FindQuiz.view.bxb` view file
-* You can customize the Quiz Question/Answer prompts by directly modifying the `resources/base/views/UpdateQuiz.view.bxb` file and by modifying the dialog macros in `resources/en/dialog/macros/`.
-* The training in this sample capsule is basic. You will likely need to add additional training for your quiz
-* Have fun!
+* The capsule was customized from the Bixby example during the Voice Hacks 2019. 
 
 ---
 
-## Additional Resources
+## Additional Resources from Bixby
 
 ### Your Source for Everything Bixby
 * [Bixby Developer Center](http://bixbydevelopers.com) - Everything you need to get started with Bixby Development!
