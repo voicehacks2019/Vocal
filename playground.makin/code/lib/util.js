@@ -20,7 +20,7 @@ function save(quiz) {
     },
   };
   var params = {
-    "message": "Add the " + answers + " to " + survey + " sheet",
+    "message": "Add " + answers + " to " + survey + " sheet",
     "apikey": "78$DFGH"
   }
   console.log('request=' + JSON.stringify(params));
