@@ -1,7 +1,7 @@
 <p align="Center">
-  <img src="https://bixbydevelopers.com/dev/docs-assets/resources/dev-guide/bixby_logo_github-11221940070278028369.png">
+  <img src="https://makin.io/images/makin_logo_small.pn">
   <br/>
-  <h1 align="Center">Bixby Quiz Sample Capsule</h1>
+  <h1 align="Center">VoiceHacks 2019 Team Vocal Makin Capsule</h1>
 </p>
 
 ## Overview
