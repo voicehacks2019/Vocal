@@ -1,0 +1,8 @@
+hints {
+  uncategorized {
+    utterance (start a survey)
+    utterance (start the Alexa survey)
+    utterance (start the Bixby survey)
+    utterance (start the Twilio survey)
+  }
+}

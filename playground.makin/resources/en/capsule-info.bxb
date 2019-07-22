@@ -1,0 +1,11 @@
+capsule-info {
+  display-name (Makin Survey Voice Hacks 2019)
+  developer-name (Makin Team)
+  icon-asset (icons/correct.png)
+  description ("An example capsule that demonstrates how to build a survey")
+  website-url (https://bixbydevelopers.com/)
+  search-keywords{
+    keyword (survey)
+  }
+  dispatch-name (Example Quiz)
+}

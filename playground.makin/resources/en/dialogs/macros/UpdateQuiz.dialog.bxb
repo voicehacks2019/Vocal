@@ -1,0 +1,83 @@
+// Localized strings used by UpdateQuiz view
+
+template-macro-def (FIRST_QUESTION) {
+  params {
+    param (quiz) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("#{value(quiz.questions[quiz.index].text)}") {
+      speech ("#{value(quiz.questions[quiz.index].text)}...  [#{value(quiz.textToSpeak)}]")
+    }
+  }
+}
+
+template-macro-def (CORRECT_QUESTION_ANSWER) {
+  params {
+    param (quiz) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("All right! #{value(quiz.questions[quiz.index].text)}") {
+      speech ("All right... #{value(quiz.questions[quiz.index].text)}... [#{value(quiz.textToSpeak)}]")
+    }
+  }
+}
+
+template-macro-def (INCORRECT_QUESTION_ANSWER) {
+  params {
+    param (quiz) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("Seriously? Anyways.  #{value(quiz.questions[quiz.index].text)}") {
+      speech ("Seriously? Anyways... #{value(quiz.questions[quiz.index].text)}...  [#{value(quiz.textToSpeak)}]")
+    }
+  }
+}
+
+template-macro-def (COMPLETED_LAST_CORRECT) {
+  params {
+    param (quiz) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("All right! Thank you for taking the survey!") {
+      speech ("All right... Thank you for taking the survey!")
+    }
+  }
+}
+
+template-macro-def (COMPLETED_LAST_INCORRECT) {
+  params {
+    param (quiz) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("Seriously? Anyways. Thank you for taking the survey!") {
+      speech ("Seriously? Anyways... Thank you for taking the survey!")
+    }
+  }
+}
+
+
+
+
+
+
+

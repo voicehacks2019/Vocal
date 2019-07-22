@@ -1,0 +1,109 @@
+// Localized strings used by FindQuiz view
+
+template-macro-def (WELCOME_TO_QUIZ) {
+   params {
+    param (quizzes) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("Welcome to Makin Survey Voice Hacks 2019! There are #{size(quizzes)} surveys available")
+  }
+}
+
+template-macro-def (QUIZ_SELECTION_QUESTION) {
+   params {
+    param (quizzes) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    choose (Random) {
+      template ("Welcome to Makin Survey Voice Hacks 2019! Which survey would you like to take?")
+      template ("Welcome to Makin Survey Voice Hacks 2019! Which of these #{size(quizzes)} surveys would you like to take?")
+    }
+  }
+}
+
+template-macro-def (ITEM-SELECTION-QUESTION) {
+  params {
+    param (quizzes) {
+      type (Quiz)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    choose (Random) {
+      template ("Which survey would you like to take?")
+      template ("Which survey sounds good to you?")
+    }
+  }
+}
+
+template-macro-def (OVERFLOW_STATEMENT) {
+  content {
+    template ("That's all the surveys I have.")
+  }
+}
+
+template-macro-def (UNDERFLOW_STATEMENT) {
+  content {
+    template ("This is the first list of surveys.")
+  }
+}
+
+template-macro-def (RESULT_NEXT_QUESTION) {
+  content {
+    template ("Or say next for more surveys.")
+  }
+}
+
+template-macro-def (NEXT_QUIZZES) {
+  params { 
+  param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("The next #{pageSize} surveys are")
+  }
+}
+
+template-macro-def (LAST_QUIZZES) {
+  params { 
+  param (pageSize) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    template ("The last #{pageSize} surveys are")
+  }
+}
+
+template-macro-def (LAST_QUIZ) {
+  content {
+    template ("The last survey is")
+  }
+}
+
+
+template-macro-def (QUIZ_LIST_SUMMARY) {
+  params {
+    param (quizzes) {
+      type (Quiz)
+      min (Required) max (Many)
+    }
+  }
+  content {
+    template("#{value(quizzes.title)} has #{size(quizzes.questions)} questions.")
+  }
+}
